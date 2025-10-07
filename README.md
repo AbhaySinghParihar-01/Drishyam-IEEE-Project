@@ -1,20 +1,42 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Drishyam (दृश्यम) - AI Narrator for Accessibility
 
-# Run and deploy your AI Studio app
+http://googleusercontent.com/image_generation_content/0 | Turning Sight into Sound for Everyone.
 
-This contains everything you need to run your app locally.
+![Project](https://img.shields.io/badge/Project-Hackathon-gold)
+![License](https://img.shields.io/badge/License-Apache%20License%202.0-red)
+![Status](https://img.shields.io/badge/Status-Proof--of--Concept-blue)
+![Contributions](https://img.shields.io/badge/Contributions-Welcome-green)
+***
+## 🎯 Our Mission
 
-View your app in AI Studio: https://ai.studio/apps/drive/1-9Zpi_C3m3zlPxZf-DeKRB0RDL0omF0r
+Drishyam (from Sanskrit '*दृश्यम्*', meaning 'vision') was born during a hackathon with a clear and urgent mission: to make the visual world more accessible. This tool is dedicated to assisting individuals with visual impairments and cognitive disabilities, providing them with the independence to understand and interact with visual information effortlessly. We believe technology should bridge gaps, and Drishyam is our contribution to a more inclusive digital and physical environment.
 
-## Run Locally
+***
+## 💡 About The Project
 
-**Prerequisites:**  Node.js
+Drishyam is an AI-powered image narrator that transforms static images into rich, audible descriptions. For someone who is visually impaired, it's a pair of eyes. For someone with a cognitive disability, it's a patient and clear guide to understanding complex visual scenes.
 
+Unlike simple alt-text which often misses context, Drishyam analyzes the entire image—the objects, their interactions, the environment, and even the potential atmosphere—to create a narrative that is both descriptive and easy to comprehend.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+***
+## ⚙ Core Functionalities for Accessibility
+
+Every feature in Drishyam is designed with our users' needs at the forefront:
+
+* *Detailed Scene Understanding:* Goes beyond naming objects to explain relationships, locations, and context. It can differentiate between a person walking in a park versus a person running in a race, providing crucial context.
+* *Clear & Simple Narration:* The AI generates descriptions that are structured, coherent, and easy to follow, helping to reduce cognitive load.
+* *Adjustable Narration Detail:* Users can choose the level of detail they need:
+    * *Quick Scan:* A brief, one-sentence summary for rapid identification (e.g., "A photo of a blue cereal box on a table.").
+    * *Full Description:* A detailed, multi-sentence narrative for a complete understanding of the scene.
+* *Natural & Calm Voice Synthesis:* Utilizes a state-of-the-art Text-to-Speech (TTS) engine that is clear and pleasant to listen to, preventing listening fatigue.
+* *Multi-Language Support:* Accessibility is global. Drishyam provides narration in English and Hindi (*हिन्दी*) to serve a diverse community.
+
+***
+## 🚀 How It Works
+
+The technology is complex, but the user experience is simple:
+
+1.  *Capture or Upload:* The user points their camera at an object or uploads an existing image.
+2.  *AI Analysis:* In seconds, our vision model analyzes the scene to understand its content.
+3.  *Narrative Generation:* The AI crafts a clear text description based on the user's preferred detail level.
+4.  *Audio Playback:* The description is read aloud through the device's speaker or headphones.
