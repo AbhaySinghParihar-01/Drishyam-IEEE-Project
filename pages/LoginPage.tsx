@@ -6,18 +6,18 @@ interface LoginPageProps {
 }
 
 const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
-  const [username, setUsername] = useState('');
   const [password, setPassword] = useState(''); // This will hold the API key
   const [authAction, setAuthAction] = useState<'initial' | 'signin' | 'signup'>('initial');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (username.trim() && password.trim()) {
-      onLogin(username.trim(), password.trim());
+    if (password.trim()) {
+      // Pass a default name since the user is no longer asked for one
+      onLogin("Drishyam User", password.trim()); 
     }
   };
 
-  const isFormValid = username.trim() !== '' && password.trim() !== '';
+  const isFormValid = password.trim() !== '';
 
   const renderInitialView = () => (
     <div className="text-center">
@@ -52,24 +52,6 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
             </div>
             
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="username" className="sr-only">
-                  Username
-                </label>
-                <div className="relative">
-                  <UserIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500" />
-                  <input
-                    id="username"
-                    type="text"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
-                    className="w-full bg-gray-800 border border-gray-700 rounded-lg pl-12 pr-4 py-3 text-white focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition-colors"
-                    placeholder="Username"
-                    required
-                    autoComplete="username"
-                  />
-                </div>
-              </div>
               <div>
                 <label htmlFor="password-key" className="sr-only">
                   Gemini API Key
