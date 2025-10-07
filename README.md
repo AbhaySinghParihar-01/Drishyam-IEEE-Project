@@ -1,6 +1,12 @@
 # Drishyam (दृश्यम) - AI Narrator for Accessibility
 
-http://googleusercontent.com/image_generation_content/0 | Turning Sight into Sound for Everyone.
+Drishyam is an AI-powered visual assistant built with the Gemini API.
+
+## 🚀 Live Demo
+
+[![Live Demo](https://img.shields.io/badge/Launch-Drishyam_Live_Demo-cyan?style=for-the-badge&logo=vercel)](https://drishyam-ieee-project-rcir.vercel.app/)
+
+**Note:** To test the application, you will need to sign in with your personal Gemini API Key, which you can get from [Google AI Studio](https://aistudio.google.com/app/apikey).
 
 ![Project](https://img.shields.io/badge/Project-Hackathon-gold)
 ![License](https://img.shields.io/badge/License-Apache%20License%202.0-red)
